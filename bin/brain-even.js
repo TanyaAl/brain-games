@@ -1,6 +1,5 @@
+#!/usr/bin/env node
 import readlineSync from 'readline-sync';
-
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
 function getRandomInt(min, max) {
   // eslint-disable-next-line no-param-reassign
@@ -11,8 +10,9 @@ function getRandomInt(min, max) {
 }
 
 function game() {
-  const userName = readlineSync.question('May I have your name? ');
+  const userName = readlineSync.question('Welcome to the Brain-games! \nMay I have your name? ');
   console.log(`Hello, ${userName}!`);
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
     const randomNumber = getRandomInt(1, 100);
     console.log(`Question: ${randomNumber}`);
