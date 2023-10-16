@@ -19,9 +19,9 @@ function game() {
     const boolNumber = randomNumber % 2 === 0;
 
     const answer = readlineSync.question('Your answer: ');
-    const boolAnswer = answer === 'true' ? 'yes' : 'no';
+    const boolAnswer = answer === 'yes';
 
-    if (boolNumber !== boolAnswer) {
+    if ((boolNumber !== boolAnswer) || (answer !== 'yes' && answer !== 'no')) {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was ${boolNumber === true ? '\'yes\'' : '\'no\''}.\nLet's try again, ${userName}!`);
       return;
     }
