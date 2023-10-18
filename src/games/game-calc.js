@@ -29,7 +29,8 @@ function play() {
       break;
     default:
   }
-  return [userAnswer, correctAnswer.toString()];
+  correctAnswer = toString.correctAnswer;
+  return [userAnswer, correctAnswer];
 }
 
 export { ask, play };
