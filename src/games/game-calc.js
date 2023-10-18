@@ -6,8 +6,6 @@ function getRandomOperator() {
   return operators[index];
 }
 
-const operator = getRandomOperator();
-
 function ask() {
   console.log('What is the result of the expression?');
 }
@@ -15,6 +13,7 @@ function ask() {
 function play() {
   const num1 = getRandomInt(1, 50);
   const num2 = getRandomInt(1, 50);
+  const operator = getRandomOperator();
   const userAnswer = getUserAnswer(`${num1}${operator}${num2}`);
   let correctAnswer;
   switch (operator) {
@@ -28,9 +27,9 @@ function play() {
       correctAnswer = num1 * num2;
       break;
     default:
+      break;
   }
-  correctAnswer = toString.correctAnswer;
-  return [userAnswer, correctAnswer];
+  return [userAnswer, correctAnswer.toString()];
 }
 
 export { ask, play };

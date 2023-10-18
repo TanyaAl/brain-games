@@ -21,7 +21,7 @@ function executeGame(ask, play) {
   for (let i = 0; i < 3; i += 1) {
     const [userAnswer, correctAnswer] = play();
     if (userAnswer !== correctAnswer) {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was ${correctAnswer}.\nLet's try again, ${userName}!`);
       return;
     }
     console.log('Correct!');
