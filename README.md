@@ -4,3 +4,4 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/680b09cf3f495a3295af/maintainability)](https://codeclimate.com/github/TanyaAl/fullstack-javascript-project-44/maintainability)
 [![asciicast](https://asciinema.org/a/3DbqGrgYiF771Fy6WELFSS7sF.svg)](https://asciinema.org/a/3DbqGrgYiF771Fy6WELFSS7sF)
 [![asciicast](https://asciinema.org/a/l5gBWCxef97WjpYV5iMDvM21Q.svg)](https://asciinema.org/a/l5gBWCxef97WjpYV5iMDvM21Q)
+[![asciicast](https://asciinema.org/a/3xcE02HRZ7ye6PgSSvLzUKRRj.svg)](https://asciinema.org/a/3xcE02HRZ7ye6PgSSvLzUKRRj)
