@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 
 function getUserName() {
   const userName = readlineSync.question('Welcome to the Brain-games! \nMay I have your name? ');
-  console.log(`Hello, ${userName}!`);
+  console.log(`Hello, ${userName}`);
   return userName;
 }
 
@@ -29,4 +29,6 @@ function executeGame(ask, play) {
   console.log(`Congratulations, ${userName}!`);
 }
 
-export { executeGame, getRandomInt, getUserAnswer };
+export {
+  executeGame, getRandomInt, getUserAnswer,
+};
