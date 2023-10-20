@@ -14,7 +14,7 @@ function play() {
   const num1 = getRandomInt(1, 50);
   const num2 = getRandomInt(1, 50);
   const operator = getRandomOperator();
-  const userAnswer = getUserAnswer(`${num1}${operator}${num2}`);
+  const userAnswer = getUserAnswer(`${num1} ${operator} ${num2}`);
   let correctAnswer;
   switch (operator) {
     case '+':
