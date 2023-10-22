@@ -26,6 +26,23 @@ Follow these steps to play the games on your local machine:
 
    ```bash
    git clone https://github.com/yourusername/fullstack-javascript-project-44.git
+2. Navigate to the project directory:
+
+   ```bash
+   cd fullstack-javascript-project-44
+3.Install the necessary dependencies:
+
+   ```bash
+   npm install
+```
+4. Run the game by specifying the game name:
+
+   ```bash
+   game-name
+
+
+
+
 
 [![asciicast](https://asciinema.org/a/3DbqGrgYiF771Fy6WELFSS7sF.svg)](https://asciinema.org/a/3DbqGrgYiF771Fy6WELFSS7sF)
 [![asciicast](https://asciinema.org/a/l5gBWCxef97WjpYV5iMDvM21Q.svg)](https://asciinema.org/a/l5gBWCxef97WjpYV5iMDvM21Q)
