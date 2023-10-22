@@ -24,7 +24,7 @@ Follow these steps to play the games on your local machine:
 
 1. Clone this repository to your computer using the following command:
    ```bash
-   git clone https://github.com/yourusername/fullstack-javascript-project-44.git
+   git clone https://github.com/TanyaAl/fullstack-javascript-project-44.git
 2. Navigate to the project directory:
    ```bash
    cd fullstack-javascript-project-44
