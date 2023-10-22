@@ -34,7 +34,7 @@ Follow these steps to play the games on your local machine:
 
    ```bash
    npm install
-```
+   ```
 4. Run the game by specifying the game name:
 
    ```bash
