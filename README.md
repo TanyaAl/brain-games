@@ -35,7 +35,11 @@ Follow these steps to play the games on your local machine:
    ```bash
    game-name
 
-
+[![asciicast](https://asciinema.org/a/KmW7PPILcIMWdUlBue4lPP8DG.svg)](https://asciinema.org/a/KmW7PPILcIMWdUlBue4lPP8DG)
+[![asciicast](https://asciinema.org/a/617923.svg)](https://asciinema.org/a/617923)
+[![asciicast](https://asciinema.org/a/617925.svg)](https://asciinema.org/a/617925)
+[![asciicast](https://asciinema.org/a/617926.svg)](https://asciinema.org/a/617926)
+[![asciicast](https://asciinema.org/a/617927.svg)](https://asciinema.org/a/617927)
 
 
 
