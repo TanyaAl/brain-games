@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 import { executeGame } from '../src/index.js';
-import { ask, play } from '../src/games/game-prime.js';
+import { ruleOfGame, play } from '../src/games/game-prime.js';
 
-executeGame(ask, play);
+executeGame(ruleOfGame, play);

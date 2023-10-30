@@ -1,8 +1,7 @@
-import { getRandomInt, getUserAnswer } from '../index.js';
+import { getUserAnswer } from '../index.js';
+import getRandomInt from '../utils.js';
 
-function ask() {
-  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-}
+const ruleOfGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 function play() {
   const number = getRandomInt(1, 100);
@@ -26,4 +25,4 @@ function play() {
   return [userAnswer, correctAnswer];
 }
 
-export { ask, play };
+export { play, ruleOfGame };

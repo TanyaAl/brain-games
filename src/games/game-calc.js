@@ -1,4 +1,5 @@
-import { getRandomInt, getUserAnswer } from '../index.js';
+import { getUserAnswer } from '../index.js';
+import getRandomInt from '../utils.js';
 
 function getRandomOperator() {
   const operators = ['+', '-', '*'];
@@ -6,9 +7,7 @@ function getRandomOperator() {
   return operators[index];
 }
 
-function ask() {
-  console.log('What is the result of the expression?');
-}
+const ruleOfGame = 'What is the result of the expression?';
 
 function play() {
   const num1 = getRandomInt(1, 50);
@@ -32,4 +31,4 @@ function play() {
   return [userAnswer, correctAnswer.toString()];
 }
 
-export { ask, play };
+export { play, ruleOfGame };

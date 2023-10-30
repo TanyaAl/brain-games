@@ -1,8 +1,7 @@
-import { getRandomInt, getUserAnswer } from '../index.js';
+import { getUserAnswer } from '../index.js';
+import getRandomInt from '../utils.js';
 
-function ask() {
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
-}
+const ruleOfGame = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 function play() {
   const number = getRandomInt(1, 100);
@@ -11,4 +10,4 @@ function play() {
   return [userAnswer, correctAnswer];
 }
 
-export { ask, play };
+export { play, ruleOfGame };

@@ -1,8 +1,7 @@
-import { getRandomInt, getUserAnswer } from '../index.js';
+import { getUserAnswer } from '../index.js';
+import getRandomInt from '../utils.js';
 
-function ask() {
-  console.log('Find the greatest common divisor of given numbers.');
-}
+const ruleOfGame = 'Find the greatest common divisor of given numbers.';
 
 function play() {
   const a = getRandomInt(10, 100);
@@ -21,4 +20,4 @@ function play() {
   return [userAnswer, correctAnswer.toString()];
 }
 
-export { ask, play };
+export { play, ruleOfGame };
