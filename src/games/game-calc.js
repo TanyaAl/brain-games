@@ -1,4 +1,3 @@
-import { getUserAnswer } from '../index.js';
 import getRandomInt from '../utils.js';
 
 function getRandomOperator() {
