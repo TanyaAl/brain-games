@@ -1,9 +1,9 @@
 import { getUserAnswer } from '../index.js';
 import getRandomInt from '../utils.js';
 
-const ruleOfGame = 'What number is missing in the progression?';
+const rules = 'What number is missing in the progression?';
 
-function play() {
+function generateRound() {
   const prog = [];
   const n = getRandomInt(2, 12);
   for (let i = n; prog.length < 10; i += n) {
@@ -20,4 +20,4 @@ function play() {
 
   return [userAnswer, correctAnswer.toString()];
 }
-export { play, ruleOfGame };
+export { generateRound, rules };

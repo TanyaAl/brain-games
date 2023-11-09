@@ -7,9 +7,9 @@ function getRandomOperator() {
   return operators[index];
 }
 
-const ruleOfGame = 'What is the result of the expression?';
+const rules = 'What is the result of the expression?';
 
-function play() {
+function generateRound() {
   const num1 = getRandomInt(1, 50);
   const num2 = getRandomInt(1, 50);
   const operator = getRandomOperator();
@@ -31,4 +31,4 @@ function play() {
   return [userAnswer, correctAnswer.toString()];
 }
 
-export { play, ruleOfGame };
+export { generateRound, rules };

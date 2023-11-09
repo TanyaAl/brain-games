@@ -1,13 +1,15 @@
-import { getUserAnswer } from '../index.js';
+// import { string } from '../index.js';
 import getRandomInt from '../utils.js';
 
-const ruleOfGame = 'Find the greatest common divisor of given numbers.';
+const rules = 'Find the greatest common divisor of given numbers.';
 
-function play() {
+function generateRound() {
   const a = getRandomInt(10, 100);
   const b = getRandomInt(10, 100);
 
-  const userAnswer = getUserAnswer(`${a} ${b}`);
+  const string = `${a} ${b}`;
+  const userAnswer;
+
   let correctAnswer;
   let t = a;
   let x = b;
@@ -20,4 +22,4 @@ function play() {
   return [userAnswer, correctAnswer.toString()];
 }
 
-export { play, ruleOfGame };
+export { generateRound, rules };

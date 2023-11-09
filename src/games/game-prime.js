@@ -1,9 +1,9 @@
 import { getUserAnswer } from '../index.js';
 import getRandomInt from '../utils.js';
 
-const ruleOfGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-function play() {
+function generateRound() {
   const number = getRandomInt(1, 100);
   const userAnswer = getUserAnswer(number);
 
@@ -25,4 +25,4 @@ function play() {
   return [userAnswer, correctAnswer];
 }
 
-export { play, ruleOfGame };
+export { generateRound, rules };
