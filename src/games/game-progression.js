@@ -20,7 +20,6 @@ function generateRound() {
 
   progression.splice(index, 1, '..');
   const progressionToString = progression.join(' ');
-
   const correctAnswer = beforeReplace;
 
   return [progressionToString, correctAnswer.toString()];
