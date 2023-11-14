@@ -1,4 +1,4 @@
-import readlineSync, { question } from 'readline-sync';
+import readlineSync from 'readline-sync';
 
 const numOfRounds = 3;
 
@@ -8,10 +8,10 @@ function runEngine(rules, generateRound) {
   console.log(rules);
 
   for (let i = 0; i < numOfRounds; i += 1) {
-    const [userAnswer, correctAnswer] = generateRound();
+    const [questionToUser, correctAnswer] = generateRound();
 
-    console.log(`Question: ${str}`);
-    readlineSync.question('Your answer: ');
+    console.log(`Question: ${questionToUser}`);
+    const userAnswer = readlineSync.question('Your answer: ');
 
     if (userAnswer !== correctAnswer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`);

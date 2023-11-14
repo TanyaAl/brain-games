@@ -1,22 +1,28 @@
+import runEngine from '../index.js';
 import getRandomInt from '../utils.js';
 
 const rules = 'What number is missing in the progression?';
+const makeProgression = (start, step, length) => {
+  const progression = [];
+  for (let i = 0; progression.length < length; i += 1) {
+    progression.push(start + step * i);
+  }
+  return progression;
+};
 
 function generateRound() {
-  const prog = [];
-  const n = getRandomInt(2, 12);
-  for (let i = n; prog.length < 10; i += n) {
-    prog.push(i);
-  }
-  const index = getRandomInt(0, prog.length - 1);
-  const beforeReplace = prog[index];
+  const start = getRandomInt(2, 12);
+  const step = getRandomInt(2, 5);
+  const length = getRandomInt(8, 12);
+  const index = getRandomInt(0, length - 1);
+  const progression = makeProgression(start, step, length);
+  const beforeReplace = progression[index];
 
-  prog.splice(index, 1, '..');
-  const question = prog.join(' ');
+  progression.splice(index, 1, '..');
+  const progressionToString = progression.join(' ');
 
-  const userAnswer = getUserAnswer(question);
   const correctAnswer = beforeReplace;
 
-  return [userAnswer, correctAnswer.toString()];
+  return [progressionToString, correctAnswer.toString()];
 }
-export { generateRound, rules };
+export default () => { runEngine(rules, generateRound); };

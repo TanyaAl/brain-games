@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import name from '../src/makeWelcome.js';
+import makeWelcome from '../src/makeWelcome.js';
 
-name();
+makeWelcome();

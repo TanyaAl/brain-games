@@ -1,3 +1,4 @@
+import runEngine from '../index.js';
 import getRandomInt from '../utils.js';
 
 function getRandomOperator() {
@@ -8,26 +9,26 @@ function getRandomOperator() {
 
 const rules = 'What is the result of the expression?';
 
+function calculation(num1, num2, operator) {
+  switch (operator) {
+    case '+':
+      return num1 + num2;
+    case '-':
+      return num1 - num2;
+    case '*':
+      return num1 * num2;
+    default:
+      throw new Error(`Invalid operator - ${operator}`);
+  }
+}
+
 function generateRound() {
   const num1 = getRandomInt(1, 50);
   const num2 = getRandomInt(1, 50);
   const operator = getRandomOperator();
-  const userAnswer = getUserAnswer(`${num1} ${operator} ${num2}`);
-  let correctAnswer;
-  switch (operator) {
-    case '+':
-      correctAnswer = num1 + num2;
-      break;
-    case '-':
-      correctAnswer = num1 - num2;
-      break;
-    case '*':
-      correctAnswer = num1 * num2;
-      break;
-    default:
-      break;
-  }
-  return [userAnswer, correctAnswer.toString()];
+  const correctAnswer = calculation(num1, num2, operator);
+
+  return [`${num1} ${operator} ${num2}`, correctAnswer.toString()];
 }
 
-export { generateRound, rules };
+export default () => { runEngine(rules, generateRound); };
