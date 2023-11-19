@@ -26,9 +26,10 @@ function generateRound() {
   const num1 = getRandomInt(1, 50);
   const num2 = getRandomInt(1, 50);
   const operator = getRandomOperator();
-  const correctAnswer = calculation(num1, num2, operator);
+  const question = `${num1} ${operator} ${num2}`;
+  const correctAnswer = calculation(num1, num2, operator).toString();
 
-  return [`${num1} ${operator} ${num2}`, correctAnswer.toString()];
+  return [question, correctAnswer];
 }
 
 export default () => { runEngine(rules, generateRound); };

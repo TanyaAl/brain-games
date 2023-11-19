@@ -18,10 +18,10 @@ function isPrime(number) {
 }
 
 function generateRound() {
-  const number = getRandomInt(1, 100);
-  const correctAnswer = isPrime(number) ? 'yes' : 'no';
+  const question = getRandomInt(1, 100);
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
 
-  return [number, correctAnswer];
+  return [question, correctAnswer];
 }
 
 export default () => { runEngine(rules, generateRound); };

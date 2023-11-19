@@ -17,8 +17,9 @@ function findGcd(a, b) {
 function generateRound() {
   const a = getRandomInt(10, 100);
   const b = getRandomInt(10, 100);
-  const correctAnswer = findGcd(a, b);
-  return [`${a} ${b}`, correctAnswer.toString()];
+  const correctAnswer = findGcd(a, b).toString();
+  const question = `${a} ${b}`;
+  return [question, correctAnswer];
 }
 
 export default () => { runEngine(rules, generateRound); };

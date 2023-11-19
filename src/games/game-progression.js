@@ -19,9 +19,9 @@ function generateRound() {
   const beforeReplace = progression[index];
 
   progression.splice(index, 1, '..');
-  const progressionToString = progression.join(' ');
-  const correctAnswer = beforeReplace;
+  const question = progression.join(' ');
+  const correctAnswer = beforeReplace.toString();
 
-  return [progressionToString, correctAnswer.toString()];
+  return [question, correctAnswer];
 }
 export default () => { runEngine(rules, generateRound); };
