@@ -2,7 +2,7 @@
 
 [![Actions Status](https://github.com/TanyaAl/fullstack-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/TanyaAl/fullstack-javascript-project-44/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/680b09cf3f495a3295af/maintainability)](https://codeclimate.com/github/TanyaAl/fullstack-javascript-project-44/maintainability)
-# Fullstack JavaScript Project 44
+# Brain-games
 
 This repository contains a collection of four console-based games written in JavaScript. The games are as follows:
 
@@ -24,10 +24,10 @@ Follow these steps to play the games on your local machine:
 
 1. Clone this repository to your computer using the following command:
    ```bash
-   git clone https://github.com/TanyaAl/fullstack-javascript-project-44.git
+   git clone https://github.com/TanyaAl/brain-games.git
 2. Navigate to the project directory:
    ```bash
-   cd fullstack-javascript-project-44
+   cd brain-games
 3. Install the necessary dependencies:
    ```bash
    npm install
