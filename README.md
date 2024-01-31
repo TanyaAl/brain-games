@@ -31,6 +31,10 @@ Follow these steps to play the games on your local machine:
 3. Install the necessary dependencies:
    ```bash
    npm install
+   ```
+   ```bash
+   npm link
+   
 4. Run the game by specifying the game name:
    ```bash
    game-name
